@@ -242,12 +242,16 @@
 @media (max-width: 1450px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media (max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
   }
   .container,
   .container header {
