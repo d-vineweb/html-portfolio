@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css
+    "
+    />
+    <title>CookStar</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h2><a class="logo" href="index.html">CookStar</a></h2>
+        <div class="toggle"></div>
+      </header>
+
+      <div class="Recipes">
+        <div class="text">
+          <h2>Welcome</h2>
+          <h3>Here Are Our Recipes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur, impedit. Pariatur quos fugiat tempore, aperiam in
+            quidem. Blanditiis necessitatibus voluptate earum officia
+            architecto, delectus eum voluptatum est, repudiandae non debitis.
+          </p>
+          <h4>Here are some nice Pastries recipes;</h4>
+        </div>
+        <div class="grid">
+          <div class="card card1">
+            <a href="#"> <p>pizza</p> </a>
+          </div>
+          <div class="card card2">
+            <a href="#"> <p>apple pie</p> </a>
+          </div>
+          <div class="card card3">
+            <a href="#"> <p>bread</p> </a>
+          </div>
+          <div class="card card4">
+            <a href="#"> <p>cookies</p> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Food Blog</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const heroToggle = document.querySelector('.toggle')
+    const container = document.querySelector('.container')
+
+    heroToggle.addEventListener('click', () => {
+      heroToggle.classList.toggle('active')
+      container.classList.toggle('active')
+    })
+  </script>
+</html>

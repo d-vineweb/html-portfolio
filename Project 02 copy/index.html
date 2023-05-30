@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css
+    "
+    />
+    <title>CookStar</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h2><a class="logo" href="index.html">CookStar</a></h2>
+        <div class="toggle"></div>
+      </header>
+
+      <img class="hero-img" src="Images/background.png" alt="" />
+
+      <div class="hero">
+        <h2>The Secret of cooking is,</h2>
+        <h3>first, having a love of it.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          aliquam similique vel magni sint debitis?
+        </p>
+        <a href="recipe.html" class="btn">SEE NEW RECIPES</a>
+      </div>
+    </section>
+
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="#">Food Blog</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const heroToggle = document.querySelector('.toggle')
+    const container = document.querySelector('.container')
+
+    heroToggle.addEventListener('click', () => {
+      heroToggle.classList.toggle('active')
+      container.classList.toggle('active')
+    })
+  </script>
+</html>

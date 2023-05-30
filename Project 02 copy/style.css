@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+.container {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111111;
+  color: #fff;
+  z-index: 2;
+  transition: 1s;
+}
+
+.container.active {
+  right: 300px;
+}
+
+.container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.container .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+}
+
+.hero h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.hero h3 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.hero a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.hero a:hover {
+  letter-spacing: 6px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul {
+  position: relative;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.nav ul li {
+  padding-bottom: 30px;
+}
+
+.nav ul li a:hover {
+  color: #03a9f4;
+}
+
+.recipes {
+  display: block;
+  padding: 50px;
+}
+
+.text h2 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 1000px;
+}
+
+.text h4 {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: capitalize;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px #aaa solid;
+  margin: 30px;
+}
+.card p {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ded9d9;
+}
+
+.card1 {
+  background: url(Images/pizza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  background-size: 500px;
+  border: 2px #fff solid;
+}
+
+.card2 {
+  background: url(Images/applepie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+.card3 {
+  background: url(Images/bread.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+.card4 {
+  background: url(Images/cookies.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+@media (max-width: 1450px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .container,
+  .container header {
+    padding: 40px;
+  }
+
+  .recipes {
+    margin-top: 100px;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+  }
+  .hero h3 {
+    font-size: 2em;
+  }
+
+  .text h2 {
+    font-size: 2em;
+    margin-top: 70px;
+  }
+  .text h3 {
+    font-size: 1em;
+  }
+
+  .text p {
+    font-size: 0.9em;
+  }
+}
