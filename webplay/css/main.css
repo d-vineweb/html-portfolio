@@ -1,6 +1,6 @@
 body {
   margin: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -12,11 +12,11 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/living room wallpaper.jpeg");
+  background: url('../images/living room wallpaper.jpeg');
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
-  width: 60%;
+  width: 100%;
   height: 100vh;
   z-index: -1;
   animation: introLoad 2s forwards;
@@ -48,7 +48,7 @@ nav ul {
   margin-top: 8em;
 }
 nav ul a {
-  color: #66513E;
+  color: #66513e;
   padding: 0.8em 2em;
   display: block;
   font-size: 1rem;
@@ -74,7 +74,7 @@ header svg {
 
 h1 {
   font-size: 3rem;
-  margin-top: 6em;
+  margin-top: 3em;
   line-height: 3.3rem;
 }
 
@@ -88,7 +88,7 @@ section.hero {
 section.hero .down-arrow {
   stroke: rgb(0, 0, 0);
   position: absolute;
-  bottom: 2.3em;
+  bottom: -1em;
   left: 2em;
   width: 1em;
   animation: moveArrow 1s alternate-reverse infinite;
@@ -111,7 +111,7 @@ section.hero .down-arrow path {
 }
 
 .more-designs {
-  margin-top: 0.5em;
+  margin-top: 9em;
 }
 .more-designs a {
   bottom: 5em;
@@ -241,7 +241,7 @@ img.deco-3 {
 .green:hover,
 .pink:hover,
 .black:hover {
-  background: #F2EACD;
+  background: #f2eacd;
   border-radius: 0.8em;
   background-size: 10em;
 }
@@ -276,7 +276,7 @@ img.deco-3 {
   }
   body {
     margin: 1.5em 5em;
-    font-family: "poppins", sans-serif;
+    font-family: 'poppins', sans-serif;
   }
 }
 @media only screen and (min-width: 786px) {
@@ -335,14 +335,14 @@ img.deco-3 {
     color: #c05d01;
   }
   section.hero {
-    color: #66513E;
+    color: #66513e;
     height: auto;
     width: 35%;
     margin-bottom: 8em;
   }
   section.hero .btn {
-    color: #66513E;
-    border-color: #66513E;
+    color: #66513e;
+    border-color: #66513e;
   }
   section.hero .btn:hover {
     color: #ffffff;
@@ -355,6 +355,10 @@ img.deco-3 {
   }
   section.hero .down-arrow path {
     fill: #211811;
+  }
+
+  .more-designs {
+    margin-top: 300px;
   }
   .feature {
     display: grid;
@@ -381,7 +385,7 @@ img.deco-3 {
     gap: 13em;
   }
   .what-we-do {
-    grid-template-areas: "left right";
+    grid-template-areas: 'left right';
   }
   .what-we-do .left {
     grid-area: left;
@@ -409,11 +413,11 @@ img.deco-3 {
 @keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @keyframes moveArrow {
@@ -432,4 +436,4 @@ img.deco-3 {
     transform: translateY(0);
     opacity: 1;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

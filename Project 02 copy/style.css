@@ -10,6 +10,7 @@
   color: #fff;
   text-decoration: none;
   font-size: 30px;
+  display: block;
 }
 .container {
   position: absolute;
@@ -231,9 +232,10 @@
   transition: background-size 0.5s;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: auto;
